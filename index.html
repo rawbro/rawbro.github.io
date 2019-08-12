@@ -7,18 +7,27 @@
               results = regex.exec(location.search);
           return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); 
       }
-      //     document.getElementById("date").innerHTML = Date();
-
-//      var patId = getParameterByName('patId');
        document.write("Hello World");
     </script>
 <html>
     
 <body>
-  <p id="date"></p>
+  <p id="name"></p>
+  <br>
+  <p id="tel"></p>
+  <br>
+  <p id="pet_name"></p>
+  <br>
+  <p id="pet_number"></p>
   <script>
-    var patId = getParameterByName('patId');
-    document.getElementById("date").innerHTML = patId
+    var name = getParameterByName('name');
+    var tel = getParameterByName('tel');
+    var pet_name = getParameterByName('pet_name');
+    var pet_number = getParameterByName('pet_number');
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("tel").innerHTML = tel;
+    document.getElementById("pet_name").innerHTML = pet_name;
+    document.getElementById("pet_number").innerHTML = pet_number;
   </script>
 </body>
 </html>
