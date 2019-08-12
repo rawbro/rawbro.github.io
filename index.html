@@ -7,14 +7,15 @@
               results = regex.exec(location.search);
           return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); 
       }
-    document.getElementById("date").innerHTML = Date();
+     document.getElementById("date").innerHTML = Date();
 
-
+      var patId = getParameterByName('patId ');
+       document.write("Hello World");
     </script>
 <html>
     
 <body>
   <p id="date"></p>
-  
+  123123
 </body>
 </html>
