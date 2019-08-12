@@ -1,14 +1,20 @@
 <!DOCTYPE html>
   <script type="text/javascript">
-        var name = document.getElementById('name');
-        var tel = document.getElementById('tel');
-        var a_name = document.getElementById('a_name');
-        var a_number = document.getElementById('a_number');
+
+      function getParameterByName(name) {
+          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+          var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+              results = regex.exec(location.search);
+          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " ")); 
+      }
+    document.getElementById("date").innerHTML = Date();
+
+
     </script>
 <html>
     
 <body>
-    
+  <p id="date"></p>
   
 </body>
 </html>
